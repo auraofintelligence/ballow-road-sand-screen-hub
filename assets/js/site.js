@@ -2,7 +2,7 @@
   const pages = [
     { id: "home", title: "Home", href: "index.html" },
     { id: "site", title: "10-12 Ballow", href: "site.html" },
-    { id: "trust", title: "Trust", href: "trust.html" },
+    { id: "trust", title: "Local Say", href: "trust.html" },
     { id: "sports", title: "Sand Sports", href: "sports.html" },
     { id: "film", title: "Film", href: "film.html" },
     { id: "markets", title: "Markets", href: "markets.html" },
@@ -61,7 +61,7 @@
       <div class="footer-inner">
         <div>
           <p class="footer-title">Ballow Road Sand & Screen Hub</p>
-          <p>A public conversation starter for 10-12 Ballow Road, Dunwich / Goompi, and the wider Straddie sand-sport, film and wellbeing network.</p>
+          <p>A public concept site for 10-12 Ballow Road, Dunwich / Goompi, and the wider Straddie sand-sport, screen, market and wellbeing network.</p>
         </div>
         <nav aria-label="Footer links">
           <a href="sources.html">Sources</a>

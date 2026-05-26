@@ -12,7 +12,7 @@ The site keeps the main focus on 10-12 Ballow Road while linking nearby but sepa
 
 ## Public boundary
 
-This is a public conversation starter. It does not claim site control, approval, cultural permission, current sale status, final budget, final design or partner endorsement.
+This is a public concept site. Site control, sale status, approvals, cultural programming, final budgets, final designs and partner commitments belong in the next due-diligence lane.
 
 ## Local development
 
