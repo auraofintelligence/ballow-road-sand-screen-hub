@@ -478,6 +478,19 @@ p + p {
   width: 100%;
 }
 
+.noticeboard-upgrade {
+  align-items: center;
+}
+
+.noticeboard-panel {
+  background: #ffffff;
+}
+
+.noticeboard-panel img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
 .caption {
   color: var(--muted);
   font-size: 0.95rem;
@@ -495,16 +508,33 @@ p + p {
   border-left: 5px solid var(--aqua);
   border-radius: 8px;
   box-shadow: 0 10px 28px rgba(7, 21, 34, 0.07);
+  color: var(--text);
+  display: grid;
+  justify-items: start;
   padding: 1rem;
+  text-align: left;
 }
 
 .fact-row strong {
+  color: var(--text);
   display: block;
   font-family: var(--heading);
 }
 
 .fact-row span {
   color: var(--muted);
+}
+
+.context-section .split {
+  align-items: start;
+}
+
+.context-section .fact-list {
+  margin-top: 0;
+}
+
+.context-section .fact-row {
+  padding: 1.15rem 1.25rem;
 }
 
 .sports-hero::before {
@@ -644,7 +674,8 @@ p + p {
     linear-gradient(135deg, #f5fbf8 0%, #e3f6f3 54%, #fff4cf 100%);
 }
 
-.sports-scoreboard {
+.sports-scoreboard,
+.sports-question-board {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -671,6 +702,27 @@ p + p {
   display: block;
   font-weight: 800;
   margin-top: 0.75rem;
+}
+
+.sports-question-board article {
+  background: var(--ink);
+  border-top: 5px solid var(--gold);
+  border-radius: 8px;
+  color: var(--paper-strong);
+  min-height: 10rem;
+  padding: 1.35rem;
+}
+
+.sports-question-board h3 {
+  color: var(--gold);
+  font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+  line-height: 1.1;
+  margin-bottom: 0.7rem;
+}
+
+.sports-question-board p {
+  color: #d9eef0;
+  font-weight: 800;
 }
 
 .source-list {
@@ -703,14 +755,14 @@ p + p {
 
 .sequence-wrap {
   background: var(--paper);
-  padding: 0 1.25rem 4rem;
+  padding: 3rem 1.25rem 4.5rem;
 }
 
 .sequence-nav {
-  align-items: stretch;
+  align-items: center;
   display: grid;
-  gap: 0.85rem;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1.2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(0, 1fr);
   margin: 0 auto;
   max-width: var(--max);
 }
@@ -718,11 +770,14 @@ p + p {
 .sequence-link,
 .sequence-home {
   background: var(--ink);
+  border: 1px solid rgba(16, 32, 43, 0.12);
   border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(7, 21, 34, 0.12);
   color: var(--paper-strong);
   display: grid;
+  justify-content: start;
   min-height: 5.2rem;
-  padding: 1rem;
+  padding: 1.05rem 1.35rem;
   text-decoration: none;
 }
 
@@ -739,6 +794,7 @@ p + p {
 }
 
 .sequence-link.next {
+  justify-content: end;
   text-align: right;
 }
 
@@ -750,10 +806,13 @@ p + p {
   align-items: center;
   background: var(--gold);
   color: var(--ink);
+  display: inline-flex;
   font-family: var(--heading);
   font-weight: 900;
   justify-content: center;
-  min-width: 7rem;
+  justify-self: center;
+  min-width: 9.5rem;
+  padding-inline: 1.6rem;
 }
 
 .site-footer {
@@ -918,7 +977,8 @@ p + p {
     grid-template-columns: 1fr;
   }
 
-  .sports-scoreboard {
+  .sports-scoreboard,
+  .sports-question-board {
     grid-template-columns: 1fr;
   }
 

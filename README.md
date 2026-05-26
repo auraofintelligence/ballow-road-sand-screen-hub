@@ -7,7 +7,7 @@ The site keeps the main focus on 10-12 Ballow Road while linking nearby but sepa
 - Ready S.E.T. co-op trust at 9 Ballow Road.
 - Dunwich ferry terminal upgrade context.
 - Straddie night markets and noticeboard/onboarding workflow.
-- Amity and Point Lookout sand-sport satellite possibilities.
+- Point Lookout and possible Amity sand-sport sites after site-by-site vetting.
 - Film club, outdoor cinema and grant-readiness pathways.
 
 ## Public boundary
