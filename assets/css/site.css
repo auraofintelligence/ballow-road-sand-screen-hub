@@ -506,11 +506,27 @@ p + p {
   overflow: hidden;
 }
 
+.photo-card a {
+  display: block;
+}
+
+.photo-card a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: -3px;
+}
+
 .photo-card img {
   aspect-ratio: 3 / 2;
   display: block;
   object-fit: cover;
+  transition: filter 160ms ease, transform 160ms ease;
   width: 100%;
+}
+
+.photo-card a:hover img,
+.photo-card a:focus-visible img {
+  filter: saturate(1.06);
+  transform: scale(1.015);
 }
 
 .photo-card figcaption {
