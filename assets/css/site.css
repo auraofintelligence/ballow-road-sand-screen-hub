@@ -755,7 +755,7 @@ p + p {
 
 .sequence-wrap {
   background: var(--paper);
-  padding: 3rem 1.25rem 4.5rem;
+  padding: clamp(3.8rem, 6vw, 5rem) 1.25rem clamp(7rem, 9vw, 8.5rem);
 }
 
 .sequence-nav {
