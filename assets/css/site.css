@@ -491,6 +491,34 @@ p + p {
   object-fit: contain;
 }
 
+.photo-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.photo-card {
+  background: var(--paper-strong);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(7, 21, 34, 0.08);
+  overflow: hidden;
+}
+
+.photo-card img {
+  aspect-ratio: 3 / 2;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.photo-card figcaption {
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding: 0.9rem 1rem 1rem;
+}
+
 .caption {
   color: var(--muted);
   font-size: 0.95rem;
@@ -912,6 +940,7 @@ p + p {
 
   .grid.three,
   .grid.four,
+  .photo-grid,
   .split {
     grid-template-columns: 1fr;
   }
