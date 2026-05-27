@@ -460,6 +460,14 @@ p + p {
   color: var(--aqua);
 }
 
+.fact-row .mini-button.secondary,
+.aqua .mini-button.secondary,
+.green .mini-button.secondary,
+.section:not(.dark) .card .mini-button.secondary {
+  border-color: rgba(11, 108, 120, 0.45);
+  color: var(--aqua-dark);
+}
+
 .mini-button:hover,
 .mini-button:focus {
   transform: translateY(-1px);
