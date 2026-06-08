@@ -66,6 +66,7 @@
         <nav aria-label="Footer links">
           <a href="sources.html">Sources</a>
           <a href="https://auraofintelligence.github.io/strange-but-true/" target="_blank" rel="noopener noreferrer">Strange but True</a>
+          <a href="https://auraofintelligence.github.io/dunwich-gumpi-ferry-terminal-open-data-lab/" target="_blank" rel="noopener noreferrer">Ferry data lab</a>
           <a href="https://auraofintelligence.github.io/straddie-vitality-network-builders/" target="_blank" rel="noopener noreferrer">Wellbeing builders</a>
           <a href="https://auraofintelligence.github.io/ballow-road-sand-screen-hub/" target="_blank" rel="noopener noreferrer">Live site</a>
           <a href="https://github.com/auraofintelligence/ballow-road-sand-screen-hub" target="_blank" rel="noopener noreferrer">Public source</a>
