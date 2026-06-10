@@ -516,6 +516,18 @@ p + p {
   margin-top: 1rem;
 }
 
+.phone-feature .button.secondary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink);
+}
+
+.phone-feature .button.secondary:hover,
+.phone-feature .button.secondary:focus {
+  background: #ffd16b;
+  border-color: #ffd16b;
+}
+
 .phone-frame-wrap {
   display: flex;
   justify-content: center;
