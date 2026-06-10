@@ -528,6 +528,19 @@ p + p {
   border-color: #ffd16b;
 }
 
+.phone-feature .soft a {
+  color: var(--aqua-dark);
+  font-weight: 700;
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.16em;
+}
+
+.phone-feature .soft a:hover,
+.phone-feature .soft a:focus {
+  color: var(--ink);
+  background: rgba(243, 187, 69, 0.34);
+}
+
 .phone-frame-wrap {
   display: flex;
   justify-content: center;
