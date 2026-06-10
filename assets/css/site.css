@@ -508,6 +508,49 @@ p + p {
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
 }
 
+.phone-feature .split {
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.62fr);
+}
+
+.phone-feature .button {
+  margin-top: 1rem;
+}
+
+.phone-frame-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-frame {
+  background: #071522;
+  border: 0.72rem solid #071522;
+  border-radius: 2.4rem;
+  box-shadow: 0 28px 70px rgba(7, 21, 34, 0.28);
+  max-width: min(23rem, 82vw);
+  padding: 0.85rem 0.55rem 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.phone-frame::before {
+  background: rgba(245, 251, 248, 0.82);
+  border-radius: 999px;
+  content: "";
+  display: block;
+  height: 0.34rem;
+  margin: 0 auto 0.72rem;
+  width: 4.2rem;
+}
+
+.phone-frame iframe {
+  aspect-ratio: 9 / 16;
+  background: #000000;
+  border: 0;
+  border-radius: 1.5rem;
+  display: block;
+  width: 100%;
+}
+
 .image-panel {
   background: var(--ink);
   border-radius: 8px;
