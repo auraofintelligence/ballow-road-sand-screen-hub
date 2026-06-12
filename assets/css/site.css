@@ -480,6 +480,19 @@ p + p {
   text-decoration: none;
 }
 
+.dark .route-card.feature-card {
+  background:
+    linear-gradient(135deg, rgba(71, 215, 220, 0.2), rgba(243, 187, 69, 0.16)),
+    rgba(245, 251, 248, 0.12);
+  border-color: rgba(243, 187, 69, 0.6);
+  box-shadow: 0 22px 54px rgba(7, 21, 34, 0.32);
+}
+
+.dark .route-card.feature-card span,
+.dark .route-card.feature-card strong {
+  color: var(--gold);
+}
+
 .route-card span,
 .fact-label {
   color: var(--aqua-dark);
