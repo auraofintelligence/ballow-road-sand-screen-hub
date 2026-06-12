@@ -178,7 +178,7 @@
         <span>${zone.label}</span>
         <span>${point.captureLabel}</span>
         <span>${typeof point.altitude === "number" ? `${point.altitude} m GPS altitude` : "GPS point loaded"}</span>
-        <a href="${point.pano}" target="_blank" rel="noopener noreferrer">Open flat pano fallback</a>
+        <a href="${point.viewerPano || point.pano}" target="_blank" rel="noopener noreferrer">Open flat viewer pano</a>
       </div>
     `;
   }
@@ -201,8 +201,8 @@
           <a class="button secondary small-button" href="${point.pano}" download="${point.downloadName}">Download full 360</a>
         </div>
         <details class="raw-pano-details">
-          <summary>Open raw flattened panorama strip</summary>
-          <div class="pano-scroll"><img src="${point.pano}" alt="${point.publicName} equirectangular panorama"></div>
+          <summary>Open flat viewer strip</summary>
+          <div class="pano-scroll"><img loading="lazy" src="${point.viewerPano || point.pano}" alt="${point.publicName} equirectangular panorama"></div>
         </details>
         <p class="viewer-note" data-workflow-status>Loading the 360 viewer...</p>
       </section>
@@ -226,7 +226,7 @@
       stage.innerHTML = `
         <div class="viewer-fallback">
           <h4>360 viewer unavailable on this device</h4>
-          <p>Use the thumbnail, the raw flattened panorama strip, or download the full 360 photo.</p>
+          <p>Use the thumbnail, the flat viewer strip, or download the full 360 photo.</p>
         </div>
       `;
       setStatus("WebGL is not available here. Use the fallback image or download link.");
@@ -234,14 +234,14 @@
     }
 
     if (!window.pannellum?.viewer) {
-      stage.innerHTML = `<img class="pano-fallback" src="${point.pano}" alt="${point.publicName}">`;
+      stage.innerHTML = `<img class="pano-fallback" src="${point.viewerPano || point.pano}" alt="${point.publicName}">`;
       setStatus("The 360 viewer did not load. Use the flat pano fallback.");
       return;
     }
 
     sphereViewer = window.pannellum.viewer(stage, {
       type: "equirectangular",
-      panorama: point.pano,
+      panorama: point.viewerPano || point.pano,
       autoLoad: true,
       showControls: true,
       showFullscreenCtrl: true,
