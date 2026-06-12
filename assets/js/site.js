@@ -2,6 +2,7 @@
   const pages = [
     { id: "home", title: "Home", href: "index.html" },
     { id: "site", title: "10-12 Ballow", href: "site.html" },
+    { id: "evidence", title: "360 Ideas", href: "evidence-map.html" },
     { id: "trust", title: "Local Say", href: "trust.html" },
     { id: "sports", title: "Sand Sports", href: "sports.html" },
     { id: "film", title: "Film", href: "film.html" },
