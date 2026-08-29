@@ -14,7 +14,7 @@ Each link below reflects an evidenced family, lineage or direct connection. This
 
 ### Aura Systems Image Atlas source projects
 
-- [aura-systems-image-atlas](https://github.com/auraofintelligence/aura-systems-image-atlas) - [public page](https://auraofintelligence.github.io/aura-systems-image-atlas/) - source project represented in this visual atlas, source project represented in visual atlas.
+- [aura-systems-image-atlas](https://github.com/auraofintelligence/aura-systems-image-atlas) - [public page](https://auraofintelligence.github.io/aura-systems-image-atlas/) - source project represented in this visual atlas.
 - [civilisation-of-sand](https://github.com/auraofintelligence/civilisation-of-sand) - [public page](https://auraofintelligence.github.io/civilisation-of-sand/) - shared community programme.
 - [dunwich-gumpi-ferry-terminal-open-data-lab](https://github.com/auraofintelligence/dunwich-gumpi-ferry-terminal-open-data-lab) - [public page](https://auraofintelligence.github.io/dunwich-gumpi-ferry-terminal-open-data-lab/) - explicit cross-reference, shared community programme.
 - [ready-set-co-op-trust-hub](https://github.com/auraofintelligence/ready-set-co-op-trust-hub) - [public page](https://auraofintelligence.github.io/ready-set-co-op-trust-hub/) - explicit cross-reference, shared community programme.
